@@ -80,8 +80,8 @@ const chatContainer = document.getElementById("chatContainer");
 const userInput = document.getElementById("userInput");
 const sendBtn = document.getElementById("sendBtn");
 
-// Your Vercel backend URL
-const backendUrl = "https://esp32-mu.vercel.app/api/chat";
+// Backend URL with CORS proxy
+const backendUrl = "https://corsproxy.io/?https://esp32-mu.vercel.app/api/chat";
 
 async function sendMessage() {
     const text = userInput.value.trim();
